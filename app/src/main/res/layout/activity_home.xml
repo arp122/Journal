@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    >
+    <com.pennapps.arpitsabherwal.journal.PanningView
+        android:id="@+id/panningViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/jounralbackground"
+        custom:panningDurationInMs="5000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protray.me"
+        android:id="@+id/tvTitle"
+        android:textColor="#ffffff"
+        android:textSize="42dp"
+        android:layout_marginTop="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:background="#ffc107"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="145dp"
+        android:id="@+id/view" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/main_pic"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="201dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We don't remember the days, we remember the moments"
+        android:id="@+id/tvQuote"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-Cesare Pavese"
+        android:id="@+id/tvQuoteWriter"
+        android:textColor="#999999"
+        android:layout_below="@+id/tvQuote"
+        android:layout_alignLeft="@+id/tvQuote"
+        android:layout_alignStart="@+id/tvQuote" />
+</RelativeLayout>
